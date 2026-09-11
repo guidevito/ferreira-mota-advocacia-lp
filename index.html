@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="./overrides.css" />
+  <link rel="stylesheet" href="./final-overrides.css" />
 </head>
 <body>
   <header class="site-header">
@@ -72,4 +73,12 @@
   <footer><div class="brand-footer">FERREIRA &amp; MOTA <span>ADVOCACIA</span></div><a href="https://www.instagram.com/ferreiraemota.advocacia/" target="_blank" rel="noreferrer">Instagram @ferreiraemota.advocacia ↗</a><small>© 2026 Ferreira &amp; Mota Advocacia. Conteúdo informativo, sem promessa de resultado.</small></footer>
   <a class="floating-whatsapp" href="https://wa.me/5516992550625?text=Olá%2C%20vim%20pela%20página%20da%20Ferreira%20%26%20Mota." target="_blank" rel="noreferrer" aria-label="Falar pelo WhatsApp">◔</a>
 </body>
+<script>
+  document.querySelectorAll('a[href*="wa.me"]').forEach(function (link) {
+    link.href = link.href.replace('5516982063964', '5516992550625');
+  });
+  document.querySelectorAll('.contact-person span').forEach(function (label) {
+    label.textContent = '(16) 99255-0625';
+  });
+</script>
 </html>
