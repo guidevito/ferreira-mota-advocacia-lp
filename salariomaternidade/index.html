@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="./styles.css" />
   <style>.floating{display:flex;align-items:center;justify-content:center;white-space:nowrap;width:auto;height:52px;padding:0 18px 0 12px;gap:9px;font-size:13px;font-family:Manrope,Arial,sans-serif;font-weight:700;line-height:1;letter-spacing:.01em}.floating .wa-icon{width:30px;height:30px;border:2px solid #fff;border-radius:50%;display:grid;place-items:center;flex:0 0 30px;font-size:21px;line-height:1}.floating:hover{transform:translateY(-2px) scale(1.02)}@media(max-width:780px){.floating{height:50px;padding-right:16px}.floating .wa-icon{width:29px;height:29px;flex-basis:29px}}</style>
   <link rel="stylesheet" href="./triagem.css?v=1" />
-  <script src="./triagem.js?v=1" defer></script>
+  <script src="./triagem.js?v=2" defer></script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -44,7 +44,7 @@
 <label for="interesse">3. Você tem interesse em contratar um advogado?</label>
 <select id="interesse" name="interesse" required><option value="">Selecione uma opção</option><option>Sim, tenho interesse em contratar</option><option>Quero conhecer as condições antes de decidir</option><option>No momento, quero apenas informações</option></select>
 <p class="form-note">Ao continuar, suas respostas serão incluídas em uma mensagem para o WhatsApp do escritório. Você poderá revisá-la antes de enviar. O preenchimento não confirma direito ao benefício nem contrata o serviço.</p>
-<button class="button" type="submit">Continuar no WhatsApp <span aria-hidden="true">↗</span></button>
+<a id="whatsapp-triagem" class="button whatsapp" href="https://api.whatsapp.com/send?phone=5516992550625">Continuar no WhatsApp <span aria-hidden="true">↗</span></a>
 </form></section>
   </main>
   <footer><strong>FERREIRA &amp; MOTA <small>ADVOCACIA</small></strong><span>Ribeirão Preto · SP</span></footer>
